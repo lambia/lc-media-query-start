@@ -1,0 +1,133 @@
+/* ESERCIZIO 1 - SLIDE 17 */
+
+#es-1 .box {
+    background-color: dodgerblue;
+    border-radius: 50%;
+    transition: border-radius 0.5s;
+}
+
+@media screen and (min-width: 480px) {
+    #es-1 .box {
+        border-radius: 0;
+    }
+}
+
+/* ESERCIZIO 2 - SLIDE 18 */
+
+#es-2 {
+    height: 200px;
+    background-color: green;
+}
+
+@media screen and (min-width: 480px) {
+    #es-2 {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #es-2 {
+        background-color: fuchsia;
+    }
+}
+
+/* ESERCIZIO 3 - SLIDE 15 */
+
+#es-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#es-3 .box {
+    margin: 5px;
+    background-color: dodgerblue;
+}
+
+@media screen and (min-width: 480px) {
+    #es-3 {
+        flex-direction: row;
+    }
+
+    #es-3 .box {
+        background-color: pink;
+    }
+}
+
+/* ESERCIZIO 4 - SLIDE 19 */
+
+@media screen and (min-width: 780px) {
+    #es-4 li {
+        display: inline-block;
+        padding: 5px;
+        background-color: #aaa;
+        color: white;
+        list-style-type: none;
+        text-transform: capitalize;
+    }
+}
+
+/* ESERCIZIO 5 - SLIDE 20 */
+
+#es-5 {
+    display: flex;
+}
+
+#es-5 .bg-blue {
+    background-color: dodgerblue;
+    flex-grow: 1;
+}
+
+#es-5 .bg-green {
+    display: none;
+    background-color: green;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 580px) {
+    #es-5 .bg-green {
+        padding: 20px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #es-5 .small-box {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+        background-color: #fff;
+    }
+
+    #es-5 .bg-blue {
+        flex-grow: 0;
+    }
+}
+
+/* ESERCIZIO 6 - SLIDE 16 */
+
+#es-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#es-6 img {
+    margin: 5px;
+    border: 1px solid orange;
+}
+
+@media screen and (min-width: 569px) {
+    #es-6 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 781px) {
+    #es-6 {
+        max-width: 1200px;
+    }
+}
